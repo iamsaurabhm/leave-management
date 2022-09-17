@@ -1,0 +1,39 @@
+{% extends '_layout.html' %}
+{% block title %} {{ title }} {% endblock %}
+
+
+ {% block navheader %}
+ 	{% include 'includes/navheader_employee_app.html' %}
+ {% endblock %}
+
+{% block stylesheet %}
+{% endblock %}
+
+
+        <!--CONTENTS-->
+ {% block content %}
+ <div class="policy-section">
+     <div class="container">
+         <div class="row">
+             <div class="col-lg-10 col-md-10 col-sm-10 heading">
+                <h4>Our Policies</h4>
+             </div>
+         </div>
+         <div class="row bg-secondary head">
+
+             <div class="col-lg-12 col-md-12 col-sm-12">
+                <h6>Privacy Policy:</h6>
+                <p style=" text-align: justify; color:black;
+                text-justify: inter-word;">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+             </div>
+
+             <div class="col-lg-12 col-md-12 col-sm-12">
+                <h6>Other Policy:</h6>
+                <p style=" text-align: justify; color:black;
+                text-justify: inter-word;">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+             </div>
+
+         </div>
+     </div>
+ </div>
+ {% endblock content%}

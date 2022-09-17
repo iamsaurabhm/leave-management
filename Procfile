@@ -1,0 +1,1 @@
+web: gunicorn hrsuit.wsgi:application --log-file -
