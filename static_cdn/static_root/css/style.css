@@ -1,0 +1,2516 @@
+/* Custom Style */
+
+/* Attendance table css */
+
+/* .attntable {
+   padding: 3%;
+   margin-top: -30px;
+}
+
+.attntable .title-h3{
+   color: #60a0b3 !important;
+   text-shadow: 1px 0px rgba(0,0,0,0.11);
+   padding-top: 20px;
+   margin-bottom: -5px;
+} */
+
+/* ============= INDEX PAGE CSS (index.html) ============== */
+
+body {
+   font-family: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+}
+
+
+.index1 .navbar  {
+   background-color: rgb(25, 87, 255);
+   padding: 0%;
+   border-radius: 0%;
+}
+
+.index1 .navbar .navbar-header a {
+   color: white;
+}
+
+.index1 .navbar .collapse a {
+   color: white;
+}
+
+.index1 a{
+   font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+   font-weight: 100;
+   font-size: 16px;
+   color: rgb(243, 99, 42);
+   text-decoration: none;   
+}
+
+.index1 .navbar-brand{
+font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+font-family: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+font-weight: 600;
+font-size: 3.1rem;
+color: #e4a530;
+text-shadow:1px 2px 1px rgba(0,0,0,0.2);
+
+}
+
+.index a{
+   font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+   font-weight: 100;
+   font-size: 16px;
+   font-weight: bold;
+   color: rgb(255, 255, 255);
+   text-decoration: none;
+   
+}
+.index button{
+   text-decoration: none;
+   
+}
+
+.index h2{
+font-family: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+color: rgb(64, 82, 250);
+font-size: 4.9rem;
+margin-top: -370px;
+/* background-color: rgb(201, 201, 201); */
+width: 70%;
+margin-left: 200px;
+border-radius: 10px;
+}
+
+.index p{
+font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+color: #cecece;
+
+}
+
+ p span{
+color: #a5a5a5;
+font-weight: bold;
+}
+
+ span.icon{
+font-size: 15px;
+}
+
+ .content{
+position: relative;
+height: 100vh;
+}
+
+.index .sub-title{
+vertical-align: -webkit-baseline-middle;
+font-size: 12px !important;
+font-family: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+}
+
+.index .back-link{
+color: #fff;
+font-size: 2.6rem;
+font-weight: 900;
+transition: all 400ms ease-in-out;
+}
+
+.index .back-link:hover{
+color: #fff;
+font-size: 2.8rem;
+transition: all 400ms ease-in-out;
+}
+
+.index .container-centered-items{
+   margin-top: -244px;
+position: absolute;
+/* top: 50%; */
+left: 0;
+right: 0;
+padding: 0%;
+overflow: hidden;
+}
+
+.index .container-centered-items img {
+   width: 100%;
+   filter: blur(8px);
+  -webkit-filter: blur(5px);
+  
+}
+
+/* ============= LOGIN PAGE CSS (login.html) ============== */
+
+.login a {
+   font-size: 30px;
+   color: #384a85;
+   padding: 2%px;
+   /* margin-top: 55px; */
+}
+
+.login  {
+   background-color: rgb(25, 87, 255);
+   border-radius: 0%;
+}
+
+.login .nav a {
+   font-size: 15px;
+   margin-top: 5px;
+   padding: 2%px;
+   color: #000000;
+}
+ 
+.login .container-fluid .navbar-header .navbar-brand{
+   color: rgb(255, 255, 255);
+}
+
+.login .container-fluid .collapse .nav a{
+   color: rgb(255, 255, 255);
+}
+
+/* ------ center form -------*/
+.parent-wrap {
+   display: table;
+   width: 100%;
+   height: 100%;
+   /*background-color: #f7f7f7;*/
+ }
+
+ .sub-parent-wrap {
+   display: table-cell;
+   vertical-align: middle;
+   padding: 15px;
+ }
+
+ /* ----- center form ---------*/
+
+.btn-custom{
+   padding: 4px 16px !important;
+   background: transparent !important;
+   color: #505050 !important;
+   border: 2px solid #8282e6 !important;
+   transition: all 400ms ease;
+}
+
+.btn-custom:hover{
+  color: #565656 !important; 
+}
+
+.forgt-pass-wrp{
+   margin-top: 5px;
+}
+
+.forgt-pass-wrp a {
+   text-decoration: none;
+}
+
+label {
+   font-weight: 100;
+   font-size: 16px;
+}
+
+
+h3{
+   font-weight: 100 !important;
+   font-size: 25px;
+}
+
+.navbar{
+   margin-bottom: 0 !important;
+}
+
+ a{
+   font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+   font-weight: 100;
+   font-size: 16px;
+ }
+
+#override-start{
+   background:none !important;
+   top: 35% !important;
+   right:13px;
+   color:#000;
+   font-size: 24px;
+
+}
+
+.alert-error{
+   background:#fd7b7b;
+   text-align: center;
+   font-size: 17px;
+}
+
+.alert-success,.alert-warning{
+   font-size:16px;
+}
+
+ 
+       a{
+               font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+               font-weight: 100;
+               font-size: 16px;
+       }
+
+
+       .navbar-brand{
+         font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+         font-family: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+         font-weight: 600;
+         font-size: 3.1rem;
+         color: #e4a530;
+         text-shadow:1px 2px 1px rgba(0,0,0,0.2);
+
+       }
+
+
+       h2{
+         font-family: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+         color: gold;
+         font-size: 4.9rem;
+
+
+       }
+     body{
+         position: relative;
+         /*background: #243177;*/
+         
+
+       }
+
+       
+       a{
+               font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+               font-weight: 100;
+               font-size: 16px;
+       }
+
+
+       .navbar-brand{
+         font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+         font-family: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+         font-weight: 600;
+         font-size: 3.1rem;
+         color: #e4a530;
+         text-shadow:1px 2px 1px rgba(0,0,0,0.2);
+
+       }
+
+
+       h2{
+         font-family: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+         color: gold;
+         font-size: 4.9rem;
+       }
+
+       p{
+         font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+         color: #cecece;
+
+       }
+
+       p span{
+         color: #a5a5a5;
+         font-weight: bold;
+       }
+
+       span.icon{
+         font-size: 15px;
+       }
+
+       .content{
+         position: relative;
+         height: 100vh;
+       }
+
+       .sub-title{
+       vertical-align: -webkit-baseline-middle;
+       font-size: 12px !important;
+       font-family: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+       }
+
+
+       .back-link{
+         color: #fff;
+         font-size: 2.6rem;
+         font-weight: 900;
+         transition: all 400ms ease-in-out;
+       }
+
+       .back-link:hover{
+         color: #fff;
+         font-size: 2.8rem;
+         transition: all 400ms ease-in-out;
+       }
+
+       .container-centered-items{
+         position: absolute;
+         top: 50%;
+         left: 0;
+         right: 0;
+       }
+
+       .parent-wrap .sub-parent-wrap .container-fluid {
+          padding: 0%;
+          margin-top: -15px;
+          
+       }
+
+       .parent-wrap .sub-parent-wrap .container-fluid .row img {
+         width: 100%;
+         margin-bottom: -20px;
+         filter: blur(8px);
+         -webkit-filter: blur(2px);
+       }
+
+       .parent-wrap .sub-parent-wrap .container-fluid .row .login2 {
+         margin-top: -500px;
+         padding: 25px;
+         padding-right: 33px;
+         padding-left: 33px;
+         background-color: rgb(156, 88, 88);
+         height: 350px;
+         width: 400px;
+         margin-left: 100px;
+         border-radius: 5px;
+         box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+         background-image: linear-gradient(rgb(98, 55, 255), rgb(111, 150, 255));
+       }
+
+       .parent-wrap .sub-parent-wrap .container-fluid .row .login2 h3{
+         font-family: calibri;
+         padding-bottom: 10px;
+         margin-bottom: 5px;
+       }
+
+       .parent-wrap .sub-parent-wrap .container-fluid .row  .login2 .login_form {
+         color: white;
+         letter-spacing: 1px;
+         
+       }
+
+       .parent-wrap .sub-parent-wrap .container-fluid .row  .login2 .login_form .button{
+         margin-top: 17px;
+         padding: 3px;
+         font-size: larger; 
+         font-style: italic;
+         color: rgb(0, 0, 0); 
+         /* background-color: rgb(156, 88, 88);  */
+         width:334px; 
+         border-radius:5px;
+         border: 1px solid;
+         text-decoration: none;       
+       }
+
+
+
+/* =============Change Password Page (change_password_form.html)  CSS ============== */
+
+.passchange .shadow{
+   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+.passchange  .wrapper-form-index-page{
+   padding: 5%;
+   width: 90%;
+   margin-left: 5%;
+   border-radius: 5px;
+   color: white;
+   background-image: linear-gradient(rgb(165, 53, 53), rgb(117, 63, 70));
+}
+
+.passchange  .wrapper-form-index-page #login_form button{
+   color: white;
+   height: 37px;
+   padding-top: 5px;
+   border-width: 2px;
+   border-color: black;
+   /* background-color: tomato; */
+}
+
+.passchange  .wrapper-form-index-page .container p {
+  color: black;
+}
+
+/* ------ center form -------*/
+.passchange {
+   display: table;
+   width: 100%;
+   height: 100%;
+}
+
+.passchange.sub-parent-wrap{
+   display:table-cell;
+   vertical-align:middle;
+   padding:15px;
+}
+
+/* ----- center form ---------*/
+
+.passchange .btn-custom{
+   padding: 4px 16px !important;
+   background: transparent !important;
+   color: #505050 !important;
+   border: 2px solid #8282e6 !important;
+   transition: all 400ms ease;
+}
+
+.passchange .btn-custom:hover{
+  color: #565656 !important; 
+}
+
+.passchange .forgt-pass-wrp{
+   margin-top: 5px;
+}
+
+.passchange .forgt-pass-wrp a {
+   text-decoration: none;
+}
+
+.passchange label {
+   font-weight: 100;
+   font-size: 16px;
+}
+
+.passchange h3{
+   font-weight: 100 !important;
+   font-size: 25px;
+}
+
+.passchange #override-start{
+   background:none !important;
+   top: 35% !important;
+   right:13px;
+   color:#000;
+   font-size: 24px;
+}
+
+.passchange .alert-warning{
+   background:#fd7b7b;
+}
+
+.passchange .alert-success {
+   background-color: #82b72a;
+}
+
+.passchange .alert-success,.alert-warning{
+   font-size:16px;
+}
+
+
+
+/* ============= DASHBOARD INDEX PAGE CSS ============== */
+
+.dashboardindex .sec-box{
+   /* width:400px;  dont uncomment this code - line  */
+   height:160px;
+   max-width:100%;
+   line-height:160px;
+   text-align:center;
+   position:relative; 
+   font-size:1.9rem;
+   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   transition: all 400ms ease-in;
+   font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+   }
+    
+.dashboardindex .sec-box a{
+   color:#fff;
+   text-decoration:none;    
+   }
+    
+    
+.dashboardindex .employee-box{
+   background:#9258c2;
+   }
+    
+    
+.dashboardindex  .leave-box{
+   background:#7232a7; 
+   }
+    
+.dashboardindex .leave-box a{
+   color:#ffffff !important;
+   }
+    
+.dashboardindex  .birthday-box{
+   background:#632e8fea;
+   }
+    
+.dashboardindex .company-box{
+   background:#868686;
+   }
+       
+.dashboardindex .count-object {
+   position: absolute;
+   top: 40%;
+   right: 12px;
+   font-size: 29px;
+   font-weight: 100;
+   font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+   color: #f5f5f5;
+   text-shadow:1px 1px rgba(8, 8, 8, 0.23);
+   }
+
+
+    /* =============DASHBOARD SIDEBAR (_layout.html)  CSS ============== */
+
+.title-h3{
+   font-weight: bold;
+   font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+  }
+
+.sidebar{
+   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2); 
+   transition: all 400ms ease-in;
+  }
+  
+.sidebar:hover{
+   -webkit-box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
+   box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
+  }
+
+.shadow{
+   box-shadow:0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   }
+
+a.simple-text{
+   font-family: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+ }
+
+a.simple-text > span{
+   font-size: 13px !important;
+ }
+
+.logo a{
+   font-family: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+ }
+
+.sub-title{
+   vertical-align: -webkit-baseline-middle;
+   font-size: 12px;
+   font-family: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+  }
+
+tr td{
+   font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+  }
+
+.sidebar .sidebar-wrapper {
+   overflow: hidden;
+}
+
+.sidebar .sidebar-wrapper .logo {
+   border-bottom: 1px solid #9258c2;
+   
+}
+
+.sidebar-wrapper .logo .simple-text {
+   color: #dfdfdf;
+   font-size: 20px;
+   font-weight: bold;
+   overflow-y: hidden;
+  }
+
+.sidebar-wrapper .logo .simple-text a {
+   padding: 0%;
+  }
+
+.sidebar-wrapper .logo .simple-text img {
+   width: 80%;
+   height: 50px;
+   padding: 0%;
+   overflow-y: hidden;
+   margin-top: 10px;
+  }
+ 
+.sidebar-wrapper {
+   background-color:#9258c2;
+   margin-top: -19px;
+   overflow-y: hidden;
+  }
+
+.sidebar-wrapper .nav  {
+   border-top: 1px solid #c0c0c0;
+   margin-top: -11px;
+   padding-top: 30px;
+   }
+
+.sidebar-wrapper .nav li p {
+   font-size: 13px;
+   color: #ffffff;
+   margin-top: 2px;
+   overflow-y: hidden;
+   }
+
+
+   /* =============DASHBOARD top nav bar (navheader_default.html)  CSS ============== */
+
+   .defaultheader {
+      background-color:#9258c2;
+      
+   }
+
+   .defaultheader .container-fluid .collapse li i {
+      color:#b3b3b3;
+   }
+
+   .defaultheader .container-fluid .collapse li i span{
+      /* color:white; */
+      font-size: 14px !important; padding-left: 2px;
+   }
+
+   .defaultheader .container-fluid .collapse .navbar-right li a p {
+      color:#b3b3b3;
+   }
+
+
+   /* =============DASHBOARD top nav bar (navheader_employee_app.html)  CSS ============== */
+
+   .nav-employee-app {
+      background-color:#9258c2;
+   }
+
+   .nav-employee-app .container-fluid .navbar-right ul li p {
+      color: #b3b3b3;
+   }
+
+   .nav-employee-app .container-fluid .collapse ul li i {
+      color: #b3b3b3;
+   }
+
+
+/* =============ADD USER PAGE (register.html)  CSS ============== */
+
+.register #override-start{
+   background:none !important;
+   top: 35% !important;
+   right:13px;
+   color:#000;
+   font-size: 24px;
+}
+
+.register .alert-warning{
+   background:#fd7b7b;
+}
+
+.register .alert-success {
+   background-color: #82b72a;
+}
+
+.register .alert-success,.alert-warning{
+   font-size:16px;
+}
+
+.register .container-fluid {
+   margin-bottom: 30px;
+}
+
+.register .container-fluid .adduser {
+   /* background-color: #3b3636; */
+   max-width: 465px;
+   height: 120px;
+   margin-top: 2px;
+   margin-bottom: 10px;
+   text-align: center;
+   border-radius: 10px;
+   border-bottom-right-radius: 10px;
+}
+
+.register .container-fluid .form-wrapper {
+   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   padding: 2%;
+   background-color: #8544bb !important;
+   padding-bottom:3%;
+   padding-top: 0%;
+   width: 500px;
+   margin-left: 233px;
+   margin-top: -10px;
+   color: white;
+   border-radius: 5px;
+}
+
+.register .container-fluid .form-wrapper .row {
+   margin-left: 0px;
+   width: 700px;
+   padding-bottom: 1%;
+}
+
+.register .container-fluid .form-wrapper .row button{
+   padding: 7px;
+   /* background-color: rgb(184, 115, 129); */
+   color: white;
+}
+
+
+/* =============ADD EMPLOYEE PAGE (employee_create.html)  CSS ============== */
+
+.addemployee .container-fluid {
+   margin-bottom: 30px;
+}
+
+.addemployee .container-fluid .form-wrapper  {
+   background-color: #8544bb !important;
+   color: white;
+   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   padding: 3%;
+   padding-bottom:3%;
+   border-radius: 2px;
+}
+
+.addemployee.sec{
+   border:1px solid yellow;
+   background:red;
+}
+
+.addemployee .btn-lg{
+   padding:8px ;
+   color: white;
+}
+
+
+.addemployee.main-panel > .content {
+   padding: 60px 15px;
+   min-height: calc(100% - 123px);
+}
+
+
+.addemployee #override-start{
+        background:none !important;
+        top: 35% !important;
+        right:13px;
+        color:#000;
+        font-size: 24px;
+
+    }
+
+.addemployee .alert-warning{
+        background:#fd7b7b;
+    }
+
+.addemployee .alert-success {
+        background-color: #82b72a;
+    }
+
+.addemployee .alert-success,.alert-warning{
+      font-size:16px;
+    }
+
+.addemployee .prev-holder .prev-avatar{
+   border-radius:50%;
+   width:250px;
+   height:250px;
+   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5prgba(0,0,0,0.2);
+   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+
+/* =============Employee Detail page (employee_detail.html)  CSS ============== */
+
+
+.employeedetail  .rounded-circle-image{
+   border-radius: 50% !important;
+   width:250px;
+   height:250px;
+   margin-left: 20px;
+}
+
+.employeedetail .profile-wrapper{
+   background:#fff;
+   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   padding-top: 10px;
+   margin-bottom: 10px;
+}
+
+
+.employeedetail .list-group {
+    margin-top: 10px;
+}
+
+.employeedetail span{
+   color: #c7c7c7;
+   font-weight: lighter;
+   font-size: 14px;
+}
+
+.employeedetail .list-group-item {
+   /* position: relative; */
+   /* display: block; */
+   padding-top: 5px;
+   padding-bottom: 20px;
+   /* margin-bottom: -1px; */
+   background-color: rgb(255, 255, 255);
+   border: 1px solid transparent;
+   font-size:16px;
+   margin-bottom: 7px;
+}
+
+.employeedetail #override-start{
+   background:none !important;
+   top: 35% !important;
+   right:13px;
+   color:#000;
+   font-size: 24px;
+  }
+
+.employeedetail   .alert-warning{
+      background:#fd7b7b;
+  }
+
+.employeedetail   .alert-success {
+      background-color: #82b72a;
+  }
+
+.employeedetail   .alert-success,.alert-warning{
+   font-size:16px;
+  }
+
+.employeedetail .container-fluid  {
+   margin-top: -20px;
+}
+
+.employeedetail .container-fluid .head {
+   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   background-color: #9258c2;
+   width: 101.45%;
+   height: 45px;
+   margin-bottom: 7px;
+}
+
+.employeedetail .container-fluid .row h3 {
+   margin-top: 1px;
+   padding-top: .7%;
+}
+
+.employeedetail .container-fluid  .row h3 .employee-name-title{
+   color: #ffffff;
+   text-transform: uppercase;
+   font-weight: 500;
+   font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+   font-size: 2.7rem !important;
+}
+
+.employeedetail span,.list-group-item {
+   font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+   margin-top: 10px;
+}
+
+.employeedetail span,.list-group-item > div{
+   font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+   margin-bottom: -15px;
+   /* padding-bottom: -5px; */
+}
+
+.employeedetail .panel-default>.panel-heading {
+   color: #fff !important;
+   background-color: #e09fc3 !important;
+}
+
+.employeedetail span,.list-group-item .btn {
+   color: rgb(168, 168, 168);
+}
+
+.employeedetail .panel-title a:hover{
+   color:#e6e4e4;
+}
+
+.employeedetail .panel-title a:active{
+   color:#e6e4e4;
+}
+
+.employeedetail .panel-title a:focus{
+   color:#e6e4e4;
+}
+
+
+/* =============All Employee page (employee_app.html)  CSS ============== */
+
+.employeelist .container-fluid {
+   margin-bottom: 30px;
+}
+
+.employeelist .fa-eye,.fa-pencil{
+   margin-right: 5px;
+}
+
+.employeelist .table-shadow{
+   background: white;
+   padding: 1%;
+   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(	0,0,0,0.2);
+   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+.employeelist .table-shadow .table-description h4{
+   margin:3px 0 3px 0 !important;
+   color: #ffffff !important;
+   text-shadow: 1px 0px rgba(0,0,0,0.11)
+}
+
+.employeelist .table-description{
+   background-color: #9258c2;
+   padding: 0.3%;
+}
+
+.employeelist .download-print-action{
+   padding-bottom: 12px;
+}
+
+
+.employeelist #override-start{
+   background:none !important;
+   top: 35% !important;
+   right:13px;
+   color:#000;
+   font-size: 24px;
+}
+
+.employeelist .alert-warning{
+   background:#fd7b7b;
+}
+
+.employeelist .alert-success {
+   background-color: #82b72a;
+}
+
+.employeelist .alert-success,.alert-warning{
+   font-size:16px;
+}
+
+.employeelist .sec-box{
+   /* width:200px; --><!-- enabled -> removes box responsiveness : avoid this  */
+   height:80px;
+   max-width:100%;
+   line-height:80px;
+   text-align:center;
+   position:relative;
+   font-size:1.9rem;
+   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   transition: all 400ms ease-in;
+   font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+}
+
+
+.employeelist .sec-box a{
+   color:#fff;
+   text-decoration:none;
+}
+
+
+.employeelist .employee-box{
+   background:#3f9a26;
+}
+
+
+.employeelist .leave-box{
+   background:#fff;
+
+}
+
+.employeelist .leave-box a{
+   color:#3ea7c7 !important;
+}
+
+
+.employeelist .birthday-box{
+   background:#8664ad;
+}
+
+.employeelist .deleted-box{
+   background:#d42828;
+}
+
+.employeelist .company-box{
+   background:#868686;
+}
+
+.employeelist .margin-bottom{
+   margin-bottom:1.4rem;
+}
+
+.employeelist .count-object {
+   position: absolute;
+   top: 31%;
+   right: 12px;
+   font-size: 25px;
+   font-weight: 100;
+   font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+   color: #f5f5f5;
+   text-shadow:1px 1px rgba(8, 8, 8, 0.23);
+}
+
+.employeelist .deprt{
+   color:#4195bd !important;
+}
+
+
+.employeelist #stylebutton{
+   background: #60a0b3 !important;
+   color: #fff !important;
+   font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+   font-size: 14px !important;
+}
+
+.employeelist .input-group-btn + input:focus{
+   outline:#60a0b3;
+}
+
+
+/* =============Pending Leaves page (leaves_recent.html)  CSS ============== */
+
+.pendingleaves .container-fluid {
+   margin-bottom: 30px;
+}
+
+.pendingleaves .fa-eye,.fa-pencil{
+   margin-right: 5px;
+}
+
+.pendingleaves .table-shadow{
+   background: white;
+   padding: 2%;
+   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(	0,0,0,0.2);
+   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+
+.pendingleaves h4{
+   margin:2px 0 5px 0 !important;
+}
+
+/* .pendingleaves .table-description{
+    STYLE WITH GOOGLE FONT
+} */
+
+.pendingleaves .download-print-action{
+   padding-bottom: 12px;
+}
+
+
+.pendingleaves #override-start{
+   background:none !important;
+   top: 35% !important;
+   right:13px;
+   color:#000;
+   font-size: 24px;
+}
+
+.pendingleaves .alert-warning{
+   background:#fd7b7b;
+}
+
+.pendingleaves .alert-success {
+   background-color: #82b72a;
+}
+
+.pendingleaves .alert-success,.alert-warning{
+   font-size:16px;
+}
+
+.pendingleaves .sec-box{
+   width:200px;
+   height:80px;
+   max-width:100%;
+   line-height:80px;
+   text-align:center;
+   position:relative;
+
+   font-size:1.9rem;
+
+   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   transition: all 400ms ease-in;
+
+   font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+}
+
+.pendingleaves .sec-box a{
+   color:#fff;
+   text-decoration:none;
+}
+
+
+.pendingleaves .employee-box{
+   background:#3f9a26;
+}
+
+
+.pendingleaves .leave-box{
+   background:#fff;
+}
+
+.pendingleaves .leave-box a{
+   color:#3ea7c7 !important;
+}
+
+
+.pendingleaves .birthday-box{
+   background:#8664ad;
+}
+
+.pendingleaves .deleted-box{
+   background:#d42828;
+}
+
+.pendingleaves .company-box{
+   background:#868686;
+}
+
+.pendingleaves .margin-bottom{
+   margin-bottom:1.4rem;
+}
+
+.pendingleaves .count-object {
+   position: absolute;
+   top: 31%;
+   right: 12px;
+   font-size: 25px;
+   font-weight: 100;
+   font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+   color: #f5f5f5;
+   text-shadow:1px 1px rgba(8, 8, 8, 0.23);
+}
+
+.pendingleaves .deprt{
+   color:#4195bd !important;
+}
+
+
+.pendingleaves #stylebutton{
+   background: #60a0b3 !important;
+   color: #fff !important;
+   font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+   font-size: 14px !important;
+}
+
+.pendingleaves .input-group-btn + input:focus{
+   outline:#60a0b3;
+}
+
+
+/* ============= Leaves detail view page (leave_detail_view.html)  CSS ============== */
+
+.leavedetail .container-fluid {
+   margin-bottom: 30px;
+}
+
+.leavedetail .rounded-circle-image{
+   border-radius: 50% !important;
+   width:250px;
+   height:250px;
+ }
+
+.leavedetail  .form-wrapper{
+   background:#fff;
+   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+}
+
+
+.leavedetail .list-group {
+   margin-top: 10px;
+}
+
+.leavedetail span{
+   color: #6f6f6f;
+   font-weight: lighter;
+   font-size: 16px;
+}
+
+.leavedetail .title-h3 {
+   font-weight: bold;
+}
+
+.leavedetail .list-group-item {
+   position: relative;
+   display: block;
+   padding-top: 5px;
+   padding-bottom: 20px;
+   margin-bottom: -1px;
+   /* color: white; */
+   /* background-color: #fff; */
+   border: 1px solid transparent;
+   font-size:18px;
+}
+
+.leavedetail #override-start{
+   background:none !important;
+   top: 35% !important;
+   right:13px;
+   color:#000;
+   font-size: 24px;
+
+   }
+
+.leavedetail .alert-warning{
+   background:#fd7b7b;
+   }
+
+.leavedetail .alert-success {
+   background-color: #82b72a;
+   }
+
+.leavedetail .alert-success,.alert-warning{
+   font-size:16px;
+   }
+
+.leavedetail .employee-name-title{
+   color: #3873b1;
+   font-weight: 600;
+   font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+   font-size: 3.1rem !important;
+ }
+
+.leavedetail span,.list-group-item > div{
+   font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+}
+
+
+.leavedetail .panel-default>.panel-heading {
+   color: #fff !important;
+   background-color: #2d88a9 !important;
+}
+
+.leavedetail .panel-title a:hover{
+   color:#e6e4e4;
+}
+
+.leavedetail .panel-title a:active{
+   color:#e6e4e4;
+}
+
+.leavedetail .panel-title a:focus{
+   color:#e6e4e4;
+}
+
+
+/* ============= Leaves cancel view page (leave_cancel.html)  CSS ============== */
+
+.leavecancel .container-fluid {
+   margin-bottom: 30px;
+}
+
+.leavecancel .container-fluid  .fa-eye, .fa-pencil{
+   margin-right: 5px;
+}
+
+.leavecancel .container-fluid  .table-shadow{
+   background: white;
+   padding: 2%;
+   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(	0,0,0,0.2);
+   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+
+.leavecancel .container-fluid  h4{
+margin:2px 0 5px 0 !important;
+}
+
+/* .table-description{
+    STYLE WITH GOOGLE FONT 
+} */
+
+.leavecancel .container-fluid  .download-print-action{
+   padding-bottom: 12px;
+}
+
+.leavecancel .container-fluid  #override-start{
+   background:none !important;
+   top: 35% !important;
+   right:13px;
+   color:#000;
+   font-size: 24px;
+}
+
+.leavecancel .container-fluid  .alert-warning{
+   background:#fd7b7b;
+}
+
+.leavecancel .container-fluid  .alert-success {
+   background-color: #82b72a;
+}
+
+.leavecancel .container-fluid  .alert-success,.alert-warning{
+   font-size:16px;
+}
+
+.leavecancel .container-fluid  .sec-box{
+   width:200px;
+   height:80px;
+   max-width:100%;
+   line-height:80px;
+   text-align:center;
+   position:relative;
+   font-size:1.9rem;
+   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   transition: all 400ms ease-in;
+   font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+}
+
+.leavecancel .container-fluid  .sec-box a{
+   color:#fff;
+   text-decoration:none;
+}
+
+.leavecancel .container-fluid  .employee-box{
+   background:#3f9a26;
+}
+
+.leavecancel .container-fluid  .leave-box{
+   background:#fff;
+}
+
+.leavecancel .container-fluid  .leave-box a{
+   color:#3ea7c7 !important;
+}
+
+.leavecancel .container-fluid  .birthday-box{
+   background:#8664ad;
+}
+
+.leavecancel .container-fluid  .deleted-box{
+   background:#d42828;
+}
+
+.leavecancel .container-fluid  .company-box{
+   background:#868686;
+}
+
+.leavecancel .container-fluid  .margin-bottom{
+   margin-bottom:1.4rem;
+   }
+
+.leavecancel .container-fluid  .count-object {
+   position: absolute;
+   top: 31%;
+   right: 12px;
+   font-size: 25px;
+   font-weight: 100;
+   font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+   color: #f5f5f5;
+   text-shadow:1px 1px rgba(8, 8, 8, 0.23);
+}
+
+.leavecancel .container-fluid  .deprt{
+   color:#4195bd !important;
+}
+
+.leavecancel .container-fluid  #stylebutton{
+   background: #60a0b3 !important;
+   color: #fff !important;
+   font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+   font-size: 14px !important;
+}
+
+.leavecancel .container-fluid  .input-group-btn + input:focus{
+   outline:#60a0b3;
+}
+
+.leavecancel .container-fluid  .total-leaves-count p{
+   font-size: 14px;
+   color: #9d9d9d;
+}
+
+
+/* ============= Leaves approve view page (leave_approved.html)  CSS ============== */
+
+.leaveapproved .container-fluid {
+   margin-bottom: 30px;
+}
+
+.leaveapproved .container-fluid .fa-eye,.fa-pencil{
+   margin-right: 5px;
+}
+
+.leaveapproved .container-fluid .table-shadow{
+   background: white;
+   padding: 2%;
+   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(	0,0,0,0.2);
+   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+
+.leaveapproved .container-fluid h4{
+   margin:2px 0 5px 0 !important;
+}
+
+/* .leaveapproved .container-fluid .table-description{
+   STYLE WITH GOOGLE FONT
+} */
+
+.leaveapproved .container-fluid .download-print-action{
+   padding-bottom: 12px;
+}
+
+
+.leaveapproved .container-fluid #override-start{
+   background:none !important;
+   top: 35% !important;
+   right:13px;
+   color:#000;
+   font-size: 24px;
+}
+
+.leaveapproved .container-fluid .alert-warning{
+   background:#fd7b7b;
+}
+
+.leaveapproved .container-fluid .alert-success {
+   background-color: #82b72a;
+}
+
+.leaveapproved .container-fluid .alert-success,.alert-warning{
+   font-size:16px;
+}
+
+.leaveapproved .container-fluid .sec-box{
+   width:200px;
+   height:80px;
+   max-width:100%;
+   line-height:80px;
+   text-align:center;
+   position:relative;
+   font-size:1.9rem;
+   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   transition: all 400ms ease-in;
+   font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+}
+
+.leaveapproved .container-fluid .sec-box a{
+   color:#fff;
+   text-decoration:none;
+}
+
+.leaveapproved .container-fluid .employee-box{
+   background:#3f9a26;
+}
+
+.leaveapproved .container-fluid .leave-box{
+   background:#fff;
+
+}
+
+.leaveapproved .container-fluid .leave-box a{
+   color:#3ea7c7 !important;
+}
+
+.leaveapproved .container-fluid .birthday-box{
+   background:#8664ad;
+}
+
+.leaveapproved .container-fluid .deleted-box{
+   background:#d42828;
+}
+
+.leaveapproved .container-fluid .company-box{
+   background:#868686;
+   }
+
+.leaveapproved .container-fluid .margin-bottom{
+   margin-bottom:1.4rem;
+}
+
+.leaveapproved .container-fluid .count-object {
+   position: absolute;
+   top: 31%;
+   right: 12px;
+   font-size: 25px;
+   font-weight: 100;
+   font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+   color: #f5f5f5;
+   text-shadow:1px 1px rgba(8, 8, 8, 0.23);
+}
+
+.leaveapproved .container-fluid .deprt{
+color:#4195bd !important;
+}
+
+.leaveapproved .container-fluid #stylebutton{
+   background: #60a0b3 !important;
+   color: #fff !important;
+   font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif !important;
+   font-size: 14px !important;
+}
+
+.leaveapproved .container-fluid .input-group-btn + input:focus{
+   outline:#60a0b3;
+}
+
+.leaveapproved .container-fluid .total-leaves-count p{
+   font-size: 14px;
+   color: #9d9d9d;
+}
+
+
+/* ============= Leaves rejected view page (rejected_leave_list.html)  CSS ============== */
+
+.rejectedleaves .container-fluid {
+   margin-bottom: 30px;
+}
+
+.rejectedleaves .container-fluid .fa-eye,.fa-pencil{
+   margin-right: 5px;
+}
+
+.rejectedleaves .container-fluid .table-shadow{
+   background: white;
+   padding: 2%;
+   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(	0,0,0,0.2);
+   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+.rejectedleaves .container-fluid h4{
+   margin:2px 0 5px 0 !important;
+}
+
+/* .table-description{
+   STYLE WITH GOOGLE FONT
+} */
+
+.rejectedleaves .container-fluid .download-print-action{
+   padding-bottom: 12px;
+}
+
+.rejectedleaves .container-fluid #override-start{
+   background:none !important;
+   top: 35% !important;
+   right:13px;
+   color:#000;
+   font-size: 24px;
+}
+
+.rejectedleaves .container-fluid .alert-warning{
+   background:#fd7b7b;
+}
+
+.rejectedleaves .container-fluid .alert-success {
+   background-color: #82b72a;
+}
+
+.rejectedleaves .container-fluid .alert-success,.alert-warning{
+   font-size:16px;
+}
+
+.rejectedleaves .container-fluid .sec-box{
+width:200px;
+   height:80px;
+   max-width:100%;
+   line-height:80px;
+   text-align:center;
+   position:relative;
+   font-size:1.9rem;
+   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   transition: all 400ms ease-in;
+   font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+}
+
+.rejectedleaves .container-fluid .sec-box a{
+   color:#fff;
+   text-decoration:none;
+}
+
+.rejectedleaves .container-fluid .employee-box{
+   background:#3f9a26;
+}
+
+.rejectedleaves .container-fluid .leave-box{
+   background:#fff;
+}
+
+.rejectedleaves .container-fluid .leave-box a{
+   color:#3ea7c7 !important;
+}
+
+.rejectedleaves .container-fluid .birthday-box{
+   background:#8664ad;
+}
+
+.rejectedleaves .container-fluid .deleted-box{
+   background:#d42828;
+}
+
+.rejectedleaves .container-fluid .company-box{
+   background:#868686;
+}
+
+.rejectedleaves .container-fluid .margin-bottom{
+   margin-bottom:1.4rem;
+}
+
+.rejectedleaves .container-fluid .count-object {
+   position: absolute;
+   top: 31%;
+   right: 12px;
+   font-size: 25px;
+   font-weight: 100;
+   font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+   color: #f5f5f5;
+   text-shadow:1px 1px rgba(8, 8, 8, 0.23);
+}
+
+.rejectedleaves .container-fluid .deprt{
+   color:#4195bd !important;
+}
+
+.rejectedleaves .container-fluid #stylebutton{
+   background: #60a0b3 !important;
+   color: #fff !important;
+   font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif !important;
+   font-size: 14px !important;
+}
+
+.rejectedleaves .container-fluid .input-group-btn + input:focus{
+outline:#60a0b3;
+}
+
+.rejectedleaves .container-fluid .total-leaves-count p{
+   font-size: 14px;
+   color: #9d9d9d;
+}
+
+
+/* ============= Leaves creation view page (create_leave.html)  CSS ============== */
+
+.createleave .container-fluid {
+   /* margin-bottom: 30px; */
+   padding: 5%;
+   padding-top: 0%;
+}
+
+.createleave .container-fluid #override-start{
+   background:none !important;
+   top: 35% !important;
+   right:13px;
+   color:#000;
+   font-size: 24px;
+   }
+
+.createleave .container-fluid .alert-warning{
+   background:#fd7b7b;
+   }
+
+.createleave .container-fluid .alert-success {
+   background-color: #82b72a;
+   }
+
+.createleave .container-fluid .alert-success,.alert-warning{
+   font-size:16px;
+   }
+
+.createleave .container-fluid .sec{
+   border:1px solid yellow;
+   background:red;
+   }
+
+.createleave .container-fluid .form-wrapper{
+   font-family: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   padding: 2%;
+   background:#662c96 !important;
+   padding-bottom:5%;
+   border-radius: 2px;
+   color: white;
+   /* margin-top: -20px; */
+   }
+
+.createleave .container-fluid .btn-lg{
+   padding:8px 30px; 
+   border-color: wheat;
+   color: wheat;
+   }
+
+.createleave .container-fluid .main-panel > .content {
+   padding: 60px 15px;
+   min-height: calc(100% - 123px);
+}
+
+
+/* =============Emergency page  (emergency_create.html)  CSS ============== */
+
+.emergency .container-fluid {
+   margin-bottom: 30px;
+}
+
+.emergency #override-start{
+   background:none !important;
+   top: 35% !important;
+   right:13px;
+   color:#000;
+   font-size: 24px;
+   }
+
+.emergency.alert-warning{
+       background:#fd7b7b;
+   }
+
+.emergency .alert-success {
+   background-color: #82b72a;
+   }
+
+.emergency .alert-success,.alert-warning{
+   font-size:16px;
+   }
+
+.emergency .sec{
+   border:1px solid yellow;
+   background:red;
+   }
+
+.form-wrapper{
+   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   padding: 2%;
+   background:#fff !important;
+   padding-bottom:5%;
+   }
+
+.btn-lg{
+   padding:8px ;  
+   }
+
+.main-panel > .content {
+   padding: 60px 15px;
+   min-height: calc(100% - 123px);
+}
+
+
+/* =============Bank Account creation Form page (bank_account_create.form.html)  CSS ============== */
+
+.bankaccount .container-fluid {
+   margin-bottom: 30px;
+}
+
+.bankaccount #override-start{
+   background:none !important;
+   top: 35% !important;
+   right:13px;
+   color:#000;
+   font-size: 24px;
+   }
+
+.bankaccount .alert-warning{
+   background:#fd7b7b;
+   }
+
+.bankaccount .alert-success {
+   background-color: #82b72a;
+   }
+
+.bankaccount .alert-success,.alert-warning{
+   font-size:16px;
+   }
+
+.bankaccount .sec{
+   border:1px solid yellow;
+   background:red;
+   }
+
+.bankaccount .form-wrapper{
+   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   padding: 2%;
+   background:#fff !important;
+   padding-bottom:4%;
+   }
+
+.bankaccount .btn-lg{
+   padding:8px 30px;    
+   }
+
+.bankaccount .main-panel > .content {
+   padding: 60px 15px;
+   min-height: calc(100% - 123px);
+   }
+
+
+/* =============Deleted User page  (bank_account_create_create.html)  CSS ============== */
+
+.deleteduser .container-fluid{
+   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   padding: 2%;
+   background:#fff !important;
+   padding-bottom:2%;
+   margin-bottom: 30px;
+   }
+
+
+/* =============All User Table page  (user_table.html)  CSS ============== */
+
+.usertable .container-fluid {
+   margin-bottom: 30px;
+}
+
+.usertable .container-fluid .pe-7s-lock,.pe-7s-unlock{
+   font-size: 16px;
+font-weight: 600;
+}
+
+.usertable .container-fluid .pe-7s-unlock{
+   color:#22c322;
+}
+
+.usertable .container-fluid .pe-7s-lock{
+   color:#dc233c;
+}
+
+.usertable .container-fluid .table-shadow{
+   background: white;
+   padding: 2%;
+   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(	0,0,0,0.2);
+   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+.usertable .container-fluid h4{
+   margin:2px 0 5px 0 !important;
+   color: #fcfcfc !important;
+   text-shadow: 1px 0px rgba(0,0,0,0.11)
+}
+
+.usertable .container-fluid .table-description{
+   /* margin-bottom: 10px; */
+   background-color: #a882c7;
+   padding: 0.3%;
+}
+
+.usertable .container-fluid .download-print-action{
+   padding-bottom: 12px;
+}
+
+
+/* =============Staff Leave Table page  (staff_leave_table.html)  CSS ============== */
+
+.staffleave .fa-eye,.fa-pencil{
+   margin-right: 5px;
+}
+
+.staffleave .table-shadow {
+   background: white;
+   padding: 2%;
+   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(	0,0,0,0.2);
+   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+.staffleave h4{
+   margin:2px 0 5px 0 !important;
+}
+
+
+
+.staffleave .table-description{
+   color: #60a0b3 !important;
+   text-shadow: 1px 0px rgba(0,0,0,0.11)
+}
+
+.staffleave .download-print-action{
+   padding-bottom: 12px;
+}
+
+
+.staffleave #override-start{
+   background:none !important;
+   top: 35% !important;
+   right:13px;
+   color:#000;
+   font-size: 24px;
+}
+
+.staffleave .alert-warning{
+   background:#fd7b7b;
+   }
+
+.staffleave .alert-success {
+   background-color: #82b72a;
+}
+
+.staffleave .alert-success,.alert-warning{
+   font-size:16px;
+}
+
+.staffleave .sec-box{
+   width:200px;
+   height:80px;
+   max-width:100%;
+   line-height:80px;
+   text-align:center;
+   position:relative;
+   font-size:1.9rem;
+   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   transition: all 400ms ease-in;
+   font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+}
+
+.staffleave .sec-box a{
+color:#fff;
+text-decoration:none;
+}
+
+.staffleave .employee-box{
+   background:#3f9a26;
+}
+
+.staffleave .leave-box{
+   background:#fff;
+}
+
+.leave-box a{
+   color:#3ea7c7 !important;
+}
+
+.staffleave .birthday-box{
+   background:#8664ad;
+}
+
+.staffleave .deleted-box{
+   background:#d42828;
+}
+
+.staffleave .company-box{
+   background:#868686;
+}
+
+.staffleave .margin-bottom{
+   margin-bottom:1.4rem;
+   }
+
+.staffleave .count-object {
+   position: absolute;
+   top: 31%;
+   right: 12px;
+   font-size: 25px;
+   font-weight: 100;
+   font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+   color: #f5f5f5;
+   text-shadow:1px 1px rgba(8, 8, 8, 0.23);
+}
+
+.staffleave .deprt{
+   color:#4195bd !important;
+}
+
+
+.staffleave #stylebutton{
+   background: #60a0b3 !important;
+   color: #fff !important;
+   font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif !important;
+   font-size: 14px !important;
+}
+
+.staffleave .input-group-btn + input:focus{
+   outline:#60a0b3;
+}
+
+
+/* =============Staff Birthday page  (birthdays_this_month.html)  CSS ============== */
+
+.birthday .fa-eye,.fa-pencil{
+   margin-right: 5px;
+}
+
+.birthday .table-shadow{
+background: white;
+padding: 2%;
+-webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(	0,0,0,0.2);
+box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+.birthday h4{
+margin:2px 0 5px 0 !important;
+}
+
+/* .birthday .table-description{
+  background-color: rgba(192, 184, 186, 0.671);
+} */
+
+.birthday .download-print-action{
+   padding-bottom: 12px;
+}
+
+.birthday #override-start{
+   background:none !important;
+   top: 35% !important;
+   right:13px;
+   color:#000;
+   font-size: 24px;
+}
+
+.birthday .alert-warning{
+   background:#fd7b7b;
+}
+
+.birthday .alert-success {
+   background-color: #82b72a;
+}
+
+.birthday .alert-success,.alert-warning{
+   font-size:16px;
+}
+
+.birthday .sec-box{
+   width:200px;
+   height:80px;
+   max-width:100%;
+   line-height:80px;
+   text-align:center;
+   position:relative;
+
+   font-size:1.9rem;
+
+   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   transition: all 400ms ease-in;
+
+   font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+}
+
+.birthday .sec-box a{
+   color:#fff;
+   text-decoration:none;
+}
+
+.birthday .employee-box{
+   background:#3f9a26;
+}
+
+.birthday .leave-box{
+   background:#fff;
+}
+
+.birthday .leave-box a{
+   color:#3ea7c7 !important;
+}
+
+.birthday .birthday-box{
+   background:#8664ad;
+}
+
+.birthday .deleted-box{
+   background:#d42828;
+}
+
+.birthday .company-box{
+   background:#868686;
+}
+
+.birthday .margin-bottom{
+   margin-bottom:1.4rem;
+}
+
+.birthday .count-object {
+   position: absolute;
+   top: 31%;
+   right: 12px;
+   font-size: 25px;
+   font-weight: 100;
+   font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+   color: #f5f5f5;
+   text-shadow:1px 1px rgba(8, 8, 8, 0.23);
+}
+
+.birthday .deprt{
+   color:#4195bd !important;
+}
+
+
+.birthday #stylebutton{
+   background: #60a0b3 !important;
+   color: #fff !important;
+   font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif !important;
+   font-size: 14px !important;
+}
+
+.birthday .input-group-btn + input:focus{
+   outline:#60a0b3;
+}
+
+.birthday .birth-present{
+   color: #ff37d6;
+   font-size: 22px;
+   }
+
+
+/* =============Family Creation Page (family_create_form.html)  CSS ============== */
+
+.createfamily#override-start{
+   background:none !important;
+   top: 35% !important;
+   right:13px;
+   color:#000;
+   font-size: 24px;
+   }
+
+.createfamily  .alert-warning{
+       background:#fd7b7b;
+   }
+
+.createfamily  .alert-success {
+       background-color: #82b72a;
+   }
+
+.createfamily  .alert-success,.alert-warning{
+       font-size:16px;
+   }
+
+.createfamily  .sec{
+      border:1px solid yellow;
+      background:red;
+   }
+
+.createfamily  .form-wrapper{
+       -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+       box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+       padding: 2%;
+       background:#fff !important;
+       padding-bottom:5%;
+   }
+
+.createfamily .btn-lg{
+       padding:8px 30px;  
+   }
+
+.createfamily  .main-panel > .content {
+   padding: 60px 15px;
+   min-height: calc(100% - 123px);
+}
+
+
+/* =============Policy Page (policy.html)  CSS ============== */
+
+.policy-section {
+   overflow-x: hidden;
+}
+
+.policy-section .container .row .heading h4 {
+   text-align: center;
+   background-color: #9258c2;
+   margin-left: 25px;
+   padding: 4px;
+   font-weight: 500;
+}
+
+.policy-section .container .head {
+   background-color: #e0e0e0;
+   margin-left: 25px;
+   width: 80.65%;
+}
+
+
+/* =============Event Page (events.html)  CSS ============== */
+
+
+.event-section {
+   overflow: hidden;
+   margin-top: 15px;
+   margin-bottom: 15px;
+   padding-left: 45px;
+   width: 96%;
+}
+
+.event-section .container {
+   background-color: #e9e9e9;
+   /* padding: 0 0 0 0 ; */
+   font-weight: bolder;
+   padding-left: 0px;
+   padding-right: 0px;
+}
+
+.event-section .container img {
+   width: 79%;
+}
+
+.event-section .container .row {
+   margin-left: 205px;
+   margin-top: -590px;
+   margin-bottom: 20px;
+   padding: 10px;
+   width: 500px;
+}
+
+.event-section .container .row h4 {
+   text-align: center;
+   position: relative;
+   margin-top: -3px;
+   padding: 5px;
+   border-radius: 2px;
+   background-color: #a882c7;
+   font-family: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+   font-weight: 500;
+   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+.event-section .container .row form{
+   padding: 20px;
+   padding-bottom: 10px;
+   font-size: 5px;
+   background-color: #a882c7;
+   border-radius: 2px;
+   color: white;
+   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   /* font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif !important; */
+   font-family: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+}
+
+.event-section .container .row form button {
+   color: whitesmoke;
+   padding: 5px;
+   border: 2px solid rgb(8, 10, 94);
+   /* margin-bottom: 20px; */
+}
+
+
+/* =============Complaint Page for Superuser (complain_list.html)  CSS ============== */
+
+
+.complaint-section-super {
+   overflow: hidden;
+   margin-top: 15px;
+   margin-bottom: 15px;
+   padding-left: 45px;
+   width: 96%;
+}
+
+.complaint-section-super .container-fluid {
+   padding: 0%;
+}
+
+.complaint-section-super .container-fluid a {
+   float: right;
+   background-color: #6e36f0;
+   margin-bottom: 5px;
+}
+
+.complaint-section-super .container-fluid a .btn {
+   color: white;
+   border: 2px solid;
+   font-size: 15px;
+   padding: 2px;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+.complaint-section-super .container {
+   background-color: #e9e9e9;
+   padding: 10px;
+   font-weight: bolder;
+}
+
+.complaint-section-super .container .row {
+   /* margin-left: 205px; */
+   margin-top: -10px;
+   margin-bottom: 5px;
+   padding: 10px;
+}
+
+.complaint-section-super .container .row h4 {
+   text-align: center;
+   margin-top: -3px;
+   padding: 5px;
+   border-radius: 2px;
+   background-color: #a882c7;
+   font-family: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+   font-weight: 500;
+   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+.complaint-section-super .container .row .h4 {
+   margin-left: -15px;
+   width: 57%;
+   text-align: center;
+   margin-top: -3px;
+   padding: 5px;
+   border-radius: 2px;
+   background-color: #a882c7;
+   font-family: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+   font-weight: 500;
+   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+.complaint-section-super .container .row form{
+   padding: 20px;
+   font-size: 5px;
+   background-color: #a882c7;
+   border-radius: 2px;
+   color: white;
+   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   /* font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif !important; */
+   font-family: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+}
+
+.complaint-section-super .container .row form button {
+   color: whitesmoke;
+}
+
+.complaint-section-super .container .row .complaint-list {
+   overflow: auto;
+   overflow-x: hidden;
+   background-color: #a882c7;
+   width: 27%;
+   border-radius: 2px;
+   padding: 10px;
+   min-height: 469px;
+   max-height: 469px;
+   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+.complaint-section-super .container .row .complaint-list form {
+   display: inline-flex;
+   width: 295px;
+   box-shadow: none;
+   margin-top: -10px;
+}
+
+.complaint-section-super .container .row .complaint-list form .input-group-btn button{
+   width: 53px;
+   padding: 3.7px;
+}
+
+.complaint-section-super .container .row .complaint-list form input {
+   border-radius: 0px 4px 4px 0px;
+   padding: 5px;
+   height: 29px;
+   margin-left: 50px;
+}
+
+.complaint-section-super .container .row .complaint-list ul li {
+   width: 295px;
+   margin-left: -40px;
+   /* background-color: #7a4699; */
+   padding-bottom: 0px;
+}
+
+.complaint-section-super .container .row .complaint-list ul li:hover{
+   background-color: rgb(43, 26, 236);
+}
+
+/* .complaint-section-super .container .row .complaint-list ul .li {
+   width: 200px;
+   background-color: rgb(206, 22, 22);
+}  */
+
+.complaint-section-super .container .row .complaint-list ul li a{
+   text-transform: uppercase;
+   color: white;
+   border-radius: 5px;
+   width: 500px;
+   font-size: small;
+}
+
+.complaint-section-super .container .row .complaint-list ul li a hr{
+   margin-left: 0px;
+   width: 295px;
+   margin-bottom: 5px;
+   margin-top: 5px;
+   border-top: 1px solid rgb(0, 0, 0);
+}
+
+
+/* ============= Complaint Page (complaint.html)  CSS ============== */
+
+
+.complaint-section {
+   overflow: hidden;
+   margin-top: 15px;
+   margin-bottom: 15px;
+   padding-left: 45px;
+   width: 96%;
+}
+
+.complaint-section .container {
+   padding: 0%;
+}
+
+.complaint-section .container a {
+   float: right;
+   background-color: #6e36f0;
+   margin-bottom: 5px;
+}
+
+.complaint-section .container a .btn {
+   color: white;
+   border: 2px solid;
+   font-size: 15px;
+   padding: 2px;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+.complaint-section .container {
+   background-color: #e9e9e9;
+   padding: 10px;
+   font-weight: bolder;
+}
+
+.complaint-section .container .row {
+   margin-left: 205px;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   padding: 10px;
+   width: 500px;
+}
+
+.complaint-section .container .row h4 {
+   text-align: center;
+   margin-top: -3px;
+   padding: 5px;
+   border-radius: 2px;
+   background-color: #a882c7;
+   font-family: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+   font-weight: 500;
+   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+.complaint-section .container .row form{
+   padding: 20px;
+   font-size: 5px;
+   background-color: #a882c7;
+   border-radius: 2px;
+   color: white;
+   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+   /* font-variant: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif !important; */
+   font-family: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;
+}
+
+.complaint-section .container .row form button {
+   color: whitesmoke;
+}
+
+
+/* ============= Complaint Detail Page (complaint_detail.html)  CSS ============== */
+
+.complain-detail {
+   overflow: hidden;
+}
+
+.complain-detail .container {
+   padding: 50px;
+   margin-left: 12px;
+}
+
+.complain-detail .container .row {
+   background-color: #a882c7;
+   width: 86%;
+}
+
+.complain-detail .container .row h4 {
+   text-transform: capitalize;
+}
+
+.complain-detail .container .row p {
+   color: white;
+   text-align: justify;
+   text-justify: inter-word;
+   padding: 5%;
+   padding-top: 5px;
+}

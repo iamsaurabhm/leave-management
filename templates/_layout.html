@@ -1,0 +1,241 @@
+{% load static %}
+
+{% load humanize %}
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/png" href="{% static 'img/hr.png' %}">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>Dashboard - Zedpath H.R | {% block title %} {{ title }} {% endblock title %}</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="Saurabh Mishra <Fullstack Developer>" >
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Anton|Russo+One" rel="stylesheet">
+
+    <!-- Bootstrap core CSS     -->
+    <link href="{% static 'css/bootstrap.min.css' %}?{% now "U" %}" rel="stylesheet" />
+
+    <!-- Animation library for notifications   -->
+    <link href="{% static 'css/animate.min.css' %}?{% now "U" %}" rel="stylesheet"/>
+
+    <!--  Light Bootstrap Table core CSS    -->
+    <link href="{% static 'css/light-bootstrap-dashboard.css' %}?{% now "U" %}" rel="stylesheet"/>
+
+
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href="{% static 'css/demo.css' %}?{% now "U" %}" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}?{% now "U" %}">
+
+
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="{% static 'css/pe-icon-7-stroke.css' %}" rel="stylesheet" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="sidebar" data-color="red" data-image="{% static '' %}" >
+
+    <!--
+
+        Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
+        Tip 2: you can also add an image using data-image tag
+
+    -->
+
+    	<div class="sidebar-wrapper">
+            <div class="logo">
+                <a href="/" class="simple-text">
+                    <img src="{% static 'img/felcorp.webp' %}" alt="">
+                    {% comment %} ZEDPATH <span>HRM</span> {% endcomment %}
+                </a>
+            </div>
+            
+            <ul class="nav">
+                <li class="active">
+                    <a href="{% url 'dashboard:dashboard' %}">
+                        <i class="pe-7s-graph"></i>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+                 {% comment %} <li class="">
+                    <a href="/">
+                        <i class="pe-7s-home"></i>
+                        <p>Home</p>
+                    </a>
+                </li>  {% endcomment %}
+                <li>
+                    <a href="{% url 'accounts:userprofile' %}">
+                        <i class="pe-7s-id"></i>
+                        <p>My Profile</p>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="{% url 'dashboard:employees' %}">
+                        <i class="pe-7s-users"></i>
+                        <p>Employees</p>
+                    </a>
+                </li>
+               
+
+                <li>
+                    {% if request.user.is_superuser %}<a href="{% url 'dashboard:leaveslist' %}">
+                        {% else %}<a href="{% url 'dashboard:staffleavetable' %}">
+                        {% endif %}
+                        <i class="pe-7s-news-paper"></i>
+                        <p>Leave</p>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{% url 'dashboard:birthdays' %}">
+                        <i class="pe-7s-gift"></i>
+                        <p>Birthday</p>
+                    </a>
+                </li>
+ 
+                {% if request.user.is_superuser %}
+                <li>
+                    <a href="{% url 'dashboard:events' %}">
+                        <i class="pe-7s-culture"></i>
+                        <p>Event</p>
+                    </a>
+                </li>
+                {% endif %}
+
+                <li>
+                    <a href="{% url 'dashboard:complain' %}">
+                        <i class="pe-7s-note2"></i>
+                        <p>Grievance</p>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{% url 'dashboard:policy' %}">
+                        <i class="pe-7s-note2"></i>
+                        <p>Policy</p>
+                    </a>
+                </li>
+
+            </ul>
+    	</div>
+
+
+    </div>
+
+    <div class="main-panel">
+    <!--EVERY APP DEFINES ITS ROUTES  -->
+    {% block navheader %}
+        {% include 'includes/navheader_default.html' %}
+    {% endblock %}
+    <!-- NAVHEADER -->       
+
+        
+    <!--CONTENTS-->
+    {% block content %}
+    <section class="content">
+        <section class="container-fluid">
+                
+
+
+        </section> <!-- /container -->           
+     </section>
+    {% endblock %}
+    <!--/CONTENTS-->
+
+        {% comment %} <footer class="footer">
+            <div class="container-fluid">
+                <p class="copyright pull-right">
+                    &copy; <script>document.write(new Date().getFullYear())</script> <a href="">Rabotec IT Dept.</a>
+                </p>
+            </div>
+        </footer> {% endcomment %}
+        
+    </div>
+</div>
+
+
+</body>
+
+
+
+    <!--   Core JS Files   -->
+    <script src="{% static 'js/jquery.3.2.1.min.js' %}" type="text/javascript"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}" type="text/javascript"></script>
+
+	<!--  Charts Plugin -->
+	<script src="{% static 'js/chartist.min.js' %}"></script>
+
+    <!--  Notifications Plugin    -->
+    <script src="{% static 'js/bootstrap-notify.js' %}"></script>
+
+    <!--  Google Maps Plugin    -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+
+    <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
+	<script src="{% static 'js/light-bootstrap-dashboard.js' %}?{% now "U" %}"></script>
+
+	<!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
+	<script src="{% static 'js/demo.js' %}?{% now "U" %}"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script type="text/javascript">
+        {% block extrajs%}
+
+ 
+
+        {% endblock %}
+    </script>
+
+<script type="text/javascript">
+
+
+    function previewImage(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('.prev-holder .prev-avatar').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    
+    $(document).ready(function(){
+
+        $('.refresh-page').click(function(){
+            /*Script refreshes the page*/
+            console.log('refresh page clicked !!!');
+            location.reload(true);
+
+        });
+
+
+        $( "#id_birthday,#id_dateissued,#id_startdate,#id_enddate" ).datepicker({
+            dateFormat: 'yy-mm-dd'
+        });
+
+
+    });
+    
+	</script>
+
+    <script>
+        $(document).ready(function() {
+          $(".datepicker").datepicker(); 
+          $(".timepicker").timepicker();   
+        } );
+      </script>
+
+</html>

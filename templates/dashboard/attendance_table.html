@@ -1,0 +1,52 @@
+{% extends '_layout.html' %}
+
+{% block title %} {{ title }} {% endblock %}
+
+{% load crispy_forms_tags %}
+
+{% block navheader %}
+    {% include 'includes/navheader_employee_app.html' %}
+{% endblock %}
+ 
+ {% block content %} 
+ <section class="container-fluid attntable">
+            <div class="table-responsive table-shadow shadow">
+                <div class="text-center table-description">
+                    <h4 class="title-h3">ATTENDANCE</h4>
+                </div>
+            
+                <table class="table">
+                      <thead>
+                        <tr>
+                          <!-- <th scope="col">#</th> -->
+                          <th scope="col">User</th>
+                          <th scope="col">Date</th>
+                          <th scope="col">Status</th>
+                          {% comment %} <th scope="col">Actions</th> {% endcomment %}
+                        </tr>
+                      </thead>
+                      <tbody>
+                          {% comment %} {% for leave in leave_list %} {% endcomment %}
+                        <tr>
+
+                          <td>assdas</td>
+                          <td>assdas</td>
+                          <td>assdas</td>
+
+                          {% comment %} <td> 
+                              <a href="{% url 'dashboard:userleaveview' leave.id %}">
+                                  <span>view</span>
+                              </a>
+                              
+                          </td> {% endcomment %}
+                        </tr>
+
+                        {% comment %} {% endfor %} {% endcomment %}
+
+                      </tbody>
+
+                </table>
+    
+            </div> 
+        </section>
+ {% endblock content %}

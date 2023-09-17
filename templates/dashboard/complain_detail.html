@@ -1,0 +1,25 @@
+{% extends '_layout.html' %}
+{% block title %} {{ title }} {% endblock %}
+
+
+ {% block navheader %}
+ 	{% include 'includes/navheader_employee_app.html' %}
+ {% endblock %}
+
+{% block stylesheet %}
+{% endblock %}
+
+{% block content %}
+
+<section class="complain-detail">
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-12 p-5 text-center">
+             <h4> complaint by - <strong class="text-info">{{com.user}}</strong></h4>
+             <p class="text-white p">{{com.complaint}}</p>
+          </div>
+       </div>
+    </div>
+ </section>
+
+{% endblock content %}

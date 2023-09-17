@@ -1,0 +1,74 @@
+
+{% extends '_layout.html' %}
+
+{% block title %} {{ title }} {% endblock %}
+
+{% load crispy_forms_tags %}
+
+ {% block navheader %}
+    {% include 'includes/navheader_employee_app.html' %}
+ {% endblock %}
+
+{% block stylesheet %}
+
+{% endblock %}
+
+
+ {% block content %}
+        <section class="content createleave">
+            <section class="container-fluid">
+           
+                <section class="form-wrapper">
+                    <section class="row">
+                        <section class="col col-lg-12 col-md-12  col-sm-12">
+
+                            {% if  messages %}
+                                    {% for message in messages %}
+                                     <div {% if message.tags %} class="{{ message.tags}}"{% endif %}>
+                                         {{ message }}
+                                         <button type="button" class="close" id = "override-start"data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span>
+                                         </button>
+                                     </div>
+                                    {% endfor %}
+                            {% endif %}
+ 
+                        </section>
+                    </section>
+
+                    <section class="row">
+                        <section class="col-lg-12 col-md-12 col-sm-12 text-center space-margin">
+                            <h3 class="title-h3"><strong>{{title}}</strong></h3>
+                        </section>
+                    </section>
+
+                    {% if count_leaves < 30 %}
+
+                    <section class="row">
+                        <section class="col-lg-12 col-md-12 col-sm-12 ">
+                            <form action="{% url 'dashboard:createleave' %}" method="POST">
+                                {% csrf_token %}
+                                {{ form | crispy }}
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Send Request</button>
+                            </form>                            
+                        </section>
+                    </section>
+
+                    {% else %}
+
+                        <div class="text-danger text-center ">   
+                            <h4>You have reached your leave limit!!</h4>
+                        </div> 
+                    {% endif %}
+
+                </section>
+
+            </section> <!-- /container --> 
+        </section>
+ {% endblock %}
+
+<script type="text/javascript">
+{% block extrajs%}
+
+
+{% endblock %}
+</script>

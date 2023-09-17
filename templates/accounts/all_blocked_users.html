@@ -1,0 +1,64 @@
+{% extends '_layout.html' %}
+{% block title %} {{ title }} {% endblock %}
+
+
+ {% block navheader %}
+ 	{% include 'includes/navheader_employee_app.html' %}
+ {% endblock %}
+        <!--CONTENTS-->
+ {% block content %}
+        <section class="content deleteduser" style="font-family: Roboto,Lucida Grande,DejaVu Sans,Bitstream Vera Sans,Verdana,Arial,sans-serif;">
+
+            <section class="container-fluid">
+            		<section class="row">
+            			<section class="col col-lg-12 text-center">
+            				<h3 class="title-h3">List of Blocked Users</h3>
+            			</section>
+            		</section>
+                	<!-- TABLE -->
+                		<table class="table table-striped">
+							  <thead>
+							    <tr>
+							      <th scope="col">Username</th>
+							      <th scope="col">Employee (fullname) </th>
+							      <th scope="col">Department</th>
+							      <td scope="col">Action</td>
+							    </tr>
+							  </thead>
+ 
+							  <tbody>
+							  	{% for emp in employees %}
+							  	<tr>
+								      <td>{{emp.user.username}}</td>
+								      <td>{{ emp.get_full_name }}</td>
+								      <td>{{ emp.department }}</td>
+									  <td><a href="{% url 'accounts:userunblock' emp.user.id %}" title="unblock user"><i class="pe-7s-lock">Unblock</i></a></td>
+								</tr>
+							   {% endfor %}
+							  </tbody>
+						</table>
+                	<!-- /TABLE -->
+
+            </section> <!-- /container --> 
+
+
+        </section>
+ {% endblock %}
+
+<script type="text/javascript">
+{% block extrajs%}
+/*create-user-button - handler*/
+
+// $(document).ready(function(){
+
+// var createuser = $('.create-user-model');
+// createuser.on('click',function(){
+// alert("who clicked me ?")
+
+// });
+
+
+// });
+
+{% endblock %}
+</script>

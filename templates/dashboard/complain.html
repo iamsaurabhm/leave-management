@@ -1,0 +1,125 @@
+{% extends '_layout.html' %}
+
+{% block title %} {{ title }} {% endblock %}
+
+{% load crispy_forms_tags %}
+
+ {% block navheader %}
+    {% include 'includes/navheader_employee_app.html' %}
+ {% endblock %}
+
+{% block stylesheet %}
+
+{% endblock %}
+
+{% block content %}
+
+{% if request.user.is_superuser %}
+
+<div class="complaint-section-super">
+
+   {% comment %} {% if request.user.is_superuser %}
+   <div class="container-fluid">
+      <a href="{% url 'dashboard:complain_list' %}"><button class="btn btn-sm">Registered Complaint List</button></a>
+   </div>
+   {% endif %} {% endcomment %}
+
+   <div class="container">
+      <div class="row">
+         <div class="col col-sm-10 text-center" style="width:78.3%;">
+            {% if  messages %}
+                    {% for message in messages %}
+                     <div {% if message.tags %} class="{{ message.tags}}"{% endif %}>
+                         {{ message }}
+                         <button type="button" class="close" id = "override-start"data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span>
+                         </button>
+                     </div>
+                    {% endfor %}
+            {% endif %}
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6">
+         <h4>File a Complaint</h4>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-6">
+         <h4 class="h4">List Of Complaints</h4>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:-25px">
+         <div class="col-lg-6 col-md-6 col-sm-6">
+            <form action="" method="POST" enctype="multipart/form-data">
+               {% csrf_token %}
+               {{form | crispy }}
+               <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+            </form>
+         </div>
+      
+         <div class="col-lg-6 col-md-6 col-sm-6 complaint-list">
+                      
+            <form action="" method="GET">
+               <span class="input-group-btn">
+                  <button class="btn btn-default" id = "stylebutton"  type="submit">Search</button>
+               </span>
+               <input type="search" value="{{request.GET.search}}" name="search" class="form-control" placeholder="Search by username..">
+            </form>
+            <hr style="margin-top:0px; border: 1px solid yellow;">
+            
+            <ul class="" style="list-style-type: none;">
+               {% for com in com %}
+                  <li class="">&nbsp;<i class="fa fa-hand-o-right ">&nbsp;</i> 
+                     <a href="{% url 'dashboard:complain_detail' com.id %}">
+                        {{com.user}} &nbsp; - &nbsp; {{com.created |date:"d M, Y"}} <hr>
+                        {% comment %} {{com.created |time:"h:i a"}} {% endcomment %}
+                     </a>
+                  </li>
+               {% endfor %}
+            <ul>
+         </div> 
+      </div>
+
+   </div>
+</div>
+
+{% else %}
+
+
+<div class="complaint-section">
+
+   <div class="container">
+      <div class="row">
+
+         <div class="col col-sm-12 text-center" >
+            {% if  messages %}
+                    {% for message in messages %}
+                     <div {% if message.tags %} class="{{ message.tags}}"{% endif %}>
+                         {{ message }}
+                         <button type="button" class="close" id = "override-start"data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span>
+                         </button>
+                     </div>
+                    {% endfor %}
+            {% endif %}
+        </div>
+
+        <div class="col-lg-12 col-md-12 col-sm-12">
+         <h4>File a Complaint</h4>
+        </div>
+
+         <div class="col-lg-12 col-md-12 col-sm-12">
+            <form action="" method="POST" enctype="multipart/form-data">
+               {% csrf_token %}
+               {{form | crispy }}
+               <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+            </form>
+         </div>
+
+      </div>
+   </div>
+</div>
+
+{% endif %}
+
+{% endblock content %}

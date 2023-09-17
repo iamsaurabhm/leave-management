@@ -1,0 +1,220 @@
+
+{% extends '_layout.html' %}
+{% block title %} {{ title }} {% endblock %}
+
+
+ {% block navheader %}
+ 	{% include 'includes/navheader_employee_app.html' %}
+ {% endblock %}
+
+{% block stylesheet %}
+{% endblock %}
+
+
+        <!--CONTENTS-->
+ {% block content %}
+        <section class="content employeelist">
+            <section class="container-fluid">
+            	<section class="row">
+	            		<section class="col col-lg-12">
+	            			<a href="{{request.META.HTTP_REFERER|escape}}" style="color:#c1c1c1;">back</a>
+	            		</section>
+            	</section>
+            	<section class="row">
+                        <section class="col col-sm-8 offset-sm-2">
+
+                            {% if  messages %}
+                                    {% for message in messages %}
+                                     <div {% if message.tags %} class="{{ message.tags}}"{% endif %}>
+                                         {{ message }}
+                                         <button type="button" class="close" id = "override-start"data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span>
+                                         </button>
+                                     </div>
+                                    {% endfor %}
+                            {% endif %}
+
+                        </section>
+                </section>
+                    <!-- <div class="container"> -->
+					{% if request.user.is_superuser %}
+                    <section class="row margin-bottom">
+                    	<div class="container-fluid">
+                    	<section class="col-lg-4 col-md-4 col-sm-12">
+	            			<div class="employee-box sec-box">
+	            				<a href="{% url 'dashboard:employees' %}">
+	            				<span>Employees</span>
+	            				</a>
+	            				<span class="count-object">{{ all_employees.count }}</span> 
+	            			</div>
+            			</section>
+	            		<section class="col-lg-4 col-md-4 col-sm-12">
+	            			<div class="leave-box sec-box">
+	            				<a href="">
+	            				<span>Departments</span>
+	            				</a>
+	            				<span class="count-object deprt">{{ departments.count }}</span>
+	            			</div>
+	            		</section>
+	            		<section class="col-lg-4 col-md-4 col-sm-12">
+	            			<div class="birthday-box sec-box">
+	            				<a href="{% url 'accounts:erasedusers' %}">
+	            				<span>Blocked Users</span>
+	            				</a>
+	            				<span class="count-object">{{ blocked_employees.count }}</span> 
+	            			</div>
+	            		</section>
+	            		<!-- <section class="col col-lg-4">
+	            			<div class="deleted-box sec-box">
+	            				<a href="">
+	            				<span>Deleted</span>
+	            				</a>
+	            			</div>
+	            		</section> -->
+	            		</div>
+                    </section>
+					{% endif %}<!-- /row -->
+					
+					{% if request.user.is_superuser or request.user.is_staff %}
+					<div class="row info">
+						 <div class="col-lg-12" >
+							<h5><marquee direction="left" onmouseover='this.stop()' onmouseout='this.start()'>Create User Before Adding Employee</marquee></h5>
+						 </div>
+					</div><!-- /.row -->
+					{% endif %}
+
+                    <!-- </div> -->
+                    <!-- Search form -->
+					<div class="row" style="margin-bottom: 2.2rem;margin-top: 3rem;">
+					 <div class="">
+					  <div class="col-lg-12">
+ 
+					  	<form action="" method="GET">
+						    <div class="input-group">
+						      <span class="input-group-btn">
+						        <button class="btn btn-default" id = "stylebutton" type="button">Search</button>
+						      </span>
+						      <input type="search" value="{{request.GET.search}}" name="search" class="form-control" placeholder="Search by firstname, lastname, reporting...">
+						    </div><!-- /input-group -->
+					    </form>
+
+					  </div><!-- /.col-lg-6 -->
+					  </div>
+					</div><!-- /.row -->
+					<!-- /search form -->
+
+                	<!-- TABLE -->
+                	<div class="table-responsive table-shadow">
+                		<div class="text-center table-description">
+                			<h4 class="title-h3" style="">ALL EMPLOYEES TABLE</h4>
+                		</div>
+                		{% comment %} <div class="container-fluid">
+                			<div class="row">
+                			 	<div class="download-print-action">
+                			  		Download Excel | Pdf | Print <!-- Work on pdf and excel and print -->	
+                				</div>
+                			</div>
+                		</div> {% endcomment %}
+                		<table class="table">
+							  <thead>
+							    <tr>
+							      <th scope="col">#</th>
+							      <th scope="col">Fullname</th>
+							      <th scope="col">Designation</th>
+							      <th scope="col">Department</th>
+								  <th scope="col">Client</th>
+								  <th scope="col">Reporting</th>
+							      <th scope="col">Status</th>
+							      <th scope="col">Actions</th>
+							    </tr>
+							  </thead>
+							  <tbody>
+							  	{% for employee in employee_list %}
+							    <tr>
+
+							      {% if employee.employeeid %}
+							      <th scope="row">{{ employee.employeeid }}</th>
+							      {% else %}
+							      <th scope="row">-</th>
+							      {% endif %}
+
+							      <td>{{ employee.get_full_name }}</td>
+							      <td>{{ employee.designation }}</td>
+							      <td>{{ employee.department }}</td>
+								  <td>{{ employee.client }}</td>
+								  <td>{{ employee.reporting_to }}</td>
+
+							      {% if employee.is_blocked %}
+							      <td>Inactive</td>
+							      {% else %}
+							      <td>Active</td>
+							      {% endif %}
+
+							      <td> 
+							      	<a href="{% url 'dashboard:employeeinfo' employee.id %}">
+							      	   View 
+							      	</a>
+
+							      	 
+									{% if request.user.is_superuser %}
+									&nbsp;
+									<i style="border-right: 1px solid #000900;"></i>
+									&nbsp;&nbsp;
+							        <a class="text-danger" href="{% url 'dashboard:edit' employee.id %}">
+							       		Edit
+							        </a>
+									{% endif %}
+
+							      </td>
+							    </tr>
+							    {% endfor %}
+
+							  </tbody>
+
+						</table>
+						<!-- Pagination -->
+							  <div class="pagination">
+							    <span class="step-links">
+							        {% if employee_list.has_previous %}
+							            <a href="?page=1">&laquo; first</a>
+							            <a href="?page={{ employee_list.previous_page_number }}">previous</a>
+							        {% endif %}
+
+							        <span class="current">
+							            Page {{ employee_list.number }} of {{ employee_list.paginator.num_pages }}.
+							        </span>
+
+							        {% if employee_list.has_next %}
+							            <a href="?page={{ employee_list.next_page_number }}">next</a>
+							            <a href="?page={{ employee_list.paginator.num_pages }}">last &raquo;</a>
+							        {% endif %}
+							    </span>
+							</div>
+						<!-- /pagination -->
+
+
+					</div>
+                	<!-- /TABLE -->
+
+            </section> <!-- /container --> 
+
+
+        </section>
+ {% endblock %}
+
+<script type="text/javascript">
+{% block extrajs%}
+/*create-user-button - handler*/
+
+// $(document).ready(function(){
+
+// var createuser = $('.create-user-model');
+// createuser.on('click',function(){
+// alert("who clicked me ?")
+
+// });
+
+
+// });
+
+{% endblock %}
+</script>

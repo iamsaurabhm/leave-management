@@ -1,0 +1,90 @@
+
+{% extends '_layout.html' %}
+
+{% block title %} {{ title }} {% endblock %}
+
+{% block stylesheet %} 
+{% endblock %}
+
+ <!--CONTENTS-->
+ {% block content %}
+        <section class="content dashboardindex">
+            <section class="container-fluid">
+            	<section class="row">
+            		{% if request.user.is_superuser and request.user.is_staff %}
+            		<section class="col col-lg-4">
+            			<div class="employee-box sec-box">
+            				<a href="{% url 'dashboard:employees' %}">
+            				<span>Employees </span>
+            				</a>
+            				<span class="count-object">{{ employees.count }}</span> 
+            			</div>
+            		</section>
+            		<section class="col col-lg-4">
+            			<div class="leave-box sec-box">
+            				<a href="{% url 'dashboard:leaveslist' %}">
+            				<span>Leaves</span>
+            				</a>
+                            <span class="count-object" style="color:white;">{{ leaves.count }}</span> 
+            			</div>
+            		</section>
+            		<section class="col col-lg-4">
+            			<div class="birthday-box sec-box">
+            				<a href="{% url 'dashboard:birthdays' %}">
+            				<span>Birthdays</span>
+            				</a>
+                            <span class="count-object"> {{employees_birthday.count}} </span>
+            			</div>
+            		</section>
+            		{% else %}
+                    <section class="col col-lg-6">
+                        <div class="leave-box sec-box">
+                            <a href="{% url 'dashboard:staffleavetable' %}">
+                            <span>Leaves</span>
+                            </a>
+                            <span class="count-object" style="color:white;">{{ staff_leaves.count }}</span> 
+                        </div>
+                    </section>
+                    <section class="col col-lg-6">
+                        <div class="birthday-box sec-box">
+                            <a href="{% url 'dashboard:birthdays' %}">
+                            <span>Birthdays</span>
+                            </a>
+                            <span class="count-object"> {{employees_birthday.count}} </span>
+                        </div>
+                    </section>
+                    {% endif %}
+
+            	</section>
+
+                
+
+
+            </section> <!-- /container -->           
+        </section>
+ {% endblock %}
+
+
+{% block extrajs%}
+    
+    
+
+    $(document).ready(function(){
+          var get_login_user = '{{request.user.username}}'
+          
+          console.log(get_login_user);
+
+          demo.initChartist();
+
+          $.notify({
+              icon: 'fa fa-user',
+              message: "Welcome to Zedpath HRM, "+get_login_user
+
+            },{
+                type: 'info',
+                timer: 100
+            });
+
+      });
+
+{% endblock %}
